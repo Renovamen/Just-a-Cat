@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/p2"
+              tools:context="just.com.just.Activity.TranslateActivity">
+
+
+    <EditText
+            android:layout_marginTop="0dp"
+            android:id="@+id/editText1"
+            android:textSize="18sp"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:hint="请在此输入需要翻译的文字\n\n支持汉译英、英译汉、小语种、短语或句子"
+            android:layout_width="match_parent"
+            android:layout_height="170dp" android:inputType="textMultiLine"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <Button
+                android:layout_marginTop="0dp"
+                android:id="@+id/yuyinshuru"
+                android:src="@drawable/yuyin"
+                android:layout_marginLeft="22dp"
+                android:background="@android:color/transparent"
+                android:layout_width="171dp"
+                android:layout_height="55dp"/>
+
+        <Button
+                android:layout_marginTop="0dp"
+                android:id="@+id/button1"
+                android:background="@android:color/transparent"
+                android:onClick="translateString"
+                android:layout_width="171dp"
+                android:layout_height="55dp"/>
+    </LinearLayout>
+
+    <TextView
+            android:layout_marginTop="100dp"
+            android:id="@+id/textView1"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</LinearLayout>

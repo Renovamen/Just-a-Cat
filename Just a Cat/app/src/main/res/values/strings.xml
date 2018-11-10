@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Just a Cat</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_tuling">TulingActivity</string>
+    <string name="title_activity_translate">TranslateActivity</string>
+    <string name="title_article_detail">Article Detail</string>
+    <string name="article_by">By</string>
+    <string name="article_published_on">Published on </string>
+    <string name="article_read_more">Read Story</string>
+    <string name="dot">·</string>
+    <string name="no_network_connection">No network connection</string>
+
+    <string name="date_today">Today</string>
+    <string name="story_image_con_desc">Story Thumbnail</string>
+
+    <string name="no_internet_connection">
+        No Internet Connection.\nThis app requires internet connection to fetch top stories!
+    </string>
+
+    <!-- Label text for refresh menu action -->
+    <string name="action_refresh">Refresh</string>
+
+    <!-- Tab pages title text -->
+    <string name="tech_news_title" translatable="true">tech</string>
+    <string name="science_news_title" translatable="true">science</string>
+    <string name="travel_news_title" translatable="true">travel</string>
+    <string name="books_news_title" translatable="true">books</string>
+
+    <string name="add_widget">Add widget</string>
+    <string name="sample_news_story_1">China presses the internet censorship efforts</string>
+    <string name="sample_news_story_2">Facebook lets ads bare a man\'\s chest</string>
+    <string name="sample_news_story_3">Bit by bit, whole foods gets an Amazon touch</string>
+</resources>

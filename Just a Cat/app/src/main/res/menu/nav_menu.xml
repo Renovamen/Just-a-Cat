@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single"
+    android:id="@+id/group1">
+    <item
+        android:id="@+id/nav_guardian"
+        android:icon="@drawable/nav_guardian"
+        android:title="Guardian" />
+
+    <item
+        android:id="@+id/tuling"
+        android:icon="@drawable/nav_tuling"
+        android:title="Chat" />
+
+    <item
+        android:id="@+id/nav_favorites"
+        android:icon="@drawable/nav_favorites"
+        android:title="Favorites" />
+    <item
+        android:id="@+id/weather"
+        android:icon="@drawable/weather"
+        android:title="Weather" />
+    <item
+        android:id="@+id/nav_changetheme"
+        android:icon="@drawable/nav_changetheme"
+        android:title="Theme" />
+    <item
+        android:id="@+id/nav_news"
+        android:icon="@drawable/nav_news"
+        android:title="News" />
+    <item
+        android:id="@+id/nav_github"
+        android:icon="@drawable/nav_github"
+        android:title="Github" />
+
+</group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+
+        <item
+            android:icon="@drawable/nav_about"
+            android:id="@+id/nav_about"
+            android:title="About" />
+
+        <item
+            android:icon="@drawable/banben"
+            android:id="@+id/banben"
+            android:title="Update"/>
+    </group>
+</menu>
