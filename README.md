@@ -12,8 +12,6 @@
 
 [The Guardian](http://content.guardianapis.com/)
 
-> 《卫报》（The Guardian）是英国的全国性综合内容日报，与《泰晤士报》、《每日电讯报》被合称为英国三大报。该报注重报道国际新闻，擅长发表评论和分析性专题文章。
->
 > *The Guardian* is a British daily newspaper which is focus on reporting international news. It is good at making comments and analytical thematic articles. The paper's readership is generally on the mainstream left of British political opinion.
 
 [The New York Times](https://api.nytimes.com/) (need to use proxy)
