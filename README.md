@@ -562,7 +562,7 @@ About APIs: You must provide your own keys of following five APIs in order to co
 
 - The New York TImes
 
-  Creat Create a API on https://developer.nytimes.com and put your key here in `util/NewsQueryUtils.java`
+  Create a API on https://developer.nytimes.com and put your key here in `util/NewsQueryUtils.java`
 
 <img src="img/4.png" width=800/>
 
@@ -570,7 +570,7 @@ About APIs: You must provide your own keys of following five APIs in order to co
 
 - The Guardian
 
-  Creat Create a API on https://developer.nytimes.com and put your key here in `Data/API.java`
+  Create a API on https://developer.nytimes.com and put your key here in `Data/API.java`
 
   <img src="img/5.png" width=800/>
 
