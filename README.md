@@ -1,7 +1,8 @@
 ## Just a Cat —— An Information Application
 
-<img src="img/logo.png" width=600/>
-
+<div style="align: center">
+    <img src="img/logo.png" width=600/>
+</div>
 
 
 ### 1. Introduction
