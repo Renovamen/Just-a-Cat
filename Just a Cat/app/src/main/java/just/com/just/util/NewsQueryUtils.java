@@ -42,7 +42,7 @@ public final class NewsQueryUtils
 	{
 		// Create valid url object from the requestURL
 		String requestUrl = "https://api.nytimes.com/svc/topstories/v2/%1$s.json?api-key=%2$s";
-		String fullUrl = String.format(requestUrl, newsCategory, "2ce3f301b1274a4e86548984a5904509");
+		String fullUrl = String.format(requestUrl, newsCategory, "put in your newyorktimes_api_key");
 		URL url = createUrl(fullUrl);
 
 		// Initialize empty String object to hold the parsed JSON response

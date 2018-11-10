@@ -104,7 +104,7 @@ public class TulingActivity extends AppCompatActivity
 
     private void initSpeech()
     {
-        SpeechUtility.createUtility(this, SpeechConstant.APPID+"=5b3822b3");
+        SpeechUtility.createUtility(this, SpeechConstant.APPID+"=put in your ifly_app_id");
     }
 
     private void initData()
@@ -341,8 +341,8 @@ public class TulingActivity extends AppCompatActivity
 //      把输入的文本数据存储在请求实体类中
         Ask ask = new Ask();
         Ask.UserInfoBean info = new Ask.UserInfoBean();
-        info.setApiKey("e7028af9640445259c5ff940011590da");
-        info.setUserId("345483");
+        info.setApiKey("put in your tuling_api_key");
+        info.setUserId("put in your tuling_user_id");
         ask.setUserInfo(info);
         Ask.PerceptionBean.InputTextBean pre = new Ask.PerceptionBean.InputTextBean(text);//将要发送给机器人书文本天趣
         ask.setPerception(new Ask.PerceptionBean(pre));

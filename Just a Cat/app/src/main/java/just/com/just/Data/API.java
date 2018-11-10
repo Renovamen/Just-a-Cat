@@ -16,7 +16,7 @@ import just.com.just.BuildConfig;
 public final class API
 {
     //private static final String API_KEY = BuildConfig.GUARDIAN_API_KEY;
-    private static final String API_KEY = "c82d32ff-edff-4c89-a9f9-b9963a2eb88b";
+    private static final String API_KEY = "put in your guardian_api_key";
     private static final String API_URL = "http://content.guardianapis.com/";
     private static final String API_SEARCH_PARAM = "search?q=";
     private static final String API_OTHER_PARAMS = "&show-tags=contributor&show-blocks=body:latest&show-elements=image";

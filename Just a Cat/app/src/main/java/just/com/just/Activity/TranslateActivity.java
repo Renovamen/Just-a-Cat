@@ -107,8 +107,8 @@ public class TranslateActivity extends AppCompatActivity
     //点击按钮方法
     public void translateString(View view)
     {
-        String appId = "2fae5612d413d792";
-        String appKey = "s6eqm2C9BmCE1k6VaLDGHSJ85Bswgp0E";
+        String appId = "put in your youdao_appid";
+        String appKey = "put in your youdao_api_key";
         String salt = "2";
         String textURLEncode = mEditText.getText().toString().trim();
         try
@@ -355,7 +355,7 @@ public class TranslateActivity extends AppCompatActivity
 
     private void initSpeech()
     {
-        SpeechUtility.createUtility(this, SpeechConstant.APPID+"=5b3822b3");
+        SpeechUtility.createUtility(this, SpeechConstant.APPID+"=put in your ifly_app_id");
     }
 
 }
