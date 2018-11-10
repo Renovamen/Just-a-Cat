@@ -546,7 +546,7 @@ About APIs: You must provide your own keys of following five APIs in order to co
 
 - Youdao Translator
 
-  Create a API on https://www.xfyun.cn and  and put your key and app id here in `Activity/TranslateActivity.java `
+  Create a API on https://ai.youdao.com and  and put your key and app id here in `Activity/TranslateActivity.java `
 
   <img src="img/2.png" width=600/>
 
@@ -554,7 +554,7 @@ About APIs: You must provide your own keys of following five APIs in order to co
 
 - iFly
 
-  Create a API on https://ai.youdao.com and download SDK. Put your app id here in `Activity/TranslateActivity.java `
+  Create a API on https://www.xfyun.cn and download SDK. Put your app id here in `Activity/TranslateActivity.java `
 
   <img src="img/3.png" width=800/>
 
@@ -570,7 +570,7 @@ About APIs: You must provide your own keys of following five APIs in order to co
 
 - The Guardian
 
-  Create a API on https://developer.nytimes.com and put your key here in `Data/API.java`
+  Create a API on https://open-platform.theguardian.com/ and put your key here in `Data/API.java`
 
   <img src="img/5.png" width=800/>
 
