@@ -127,8 +127,7 @@ public class GuardianJsonParser
         {
             // Create the articlesJSON object with the articlesJSONString parameter
             JSONObject jsonObject = new JSONObject(articlesJSONString);
-            JSONObject responseObject = 
-                jsonObject.getJSONObject(JSON_RESPONSE);
+            JSONObject responseObject = jsonObject.getJSONObject(JSON_RESPONSE);
             JSONArray resultsArray = responseObject.getJSONArray(JSON_RESULTS);
             int articlesQty = resultsArray.length();
             mArticlesArrayList = new ArrayList<>();
@@ -140,30 +139,20 @@ public class GuardianJsonParser
                 // Parse the individual data elements needed
                 String articleId = articleRecord.getString(ARTICLE_ID);
                 String articleType = articleRecord.getString(ARTICLE_TYPE);
-                String articleSectionId = 
-                    articleRecord.getString(ARTICLE_SECTION_ID);
-                String articleSectionName = 
-                    articleRecord.getString(ARTICLE_SECTION_NAME);
-                String articleWebPublicationDate = 
-                    articleRecord.getString(ARTICLE_WEB_PLUBLICATION_DATE);
-                String articleWebTitle = 
-                    articleRecord.getString(ARTICLE_WEB_TITLE);
-                String articleWebUrl = 
-                    articleRecord.getString(ARTICLE_WEB_URL);
-                String articleApiUrl = 
-                    articleRecord.getString(ARTICLE_API_URL);
-                Boolean articleIsHosted = 
-                    articleRecord.getBoolean(ARTICLE_IS_HOSTED);
+                String articleSectionId = articleRecord.getString(ARTICLE_SECTION_ID);
+                String articleSectionName = articleRecord.getString(ARTICLE_SECTION_NAME);
+                String articleWebPublicationDate = articleRecord.getString(ARTICLE_WEB_PLUBLICATION_DATE);
+                String articleWebTitle = articleRecord.getString(ARTICLE_WEB_TITLE);
+                String articleWebUrl = articleRecord.getString(ARTICLE_WEB_URL);
+                String articleApiUrl = articleRecord.getString(ARTICLE_API_URL);
+                Boolean articleIsHosted = articleRecord.getBoolean(ARTICLE_IS_HOSTED);
                 // Try to get the author from the tags
-                JSONArray articleTagsArray = 
-                    articleRecord.getJSONArray(JSON_TAGS);
+                JSONArray articleTagsArray = articleRecord.getJSONArray(JSON_TAGS);
                 String articleAuthor = VALUE_NO_AUTHOR;
                 try
                 {
-                    JSONObject articleContributor = 
-                        articleTagsArray.getJSONObject(0);
-                    articleAuthor = 
-                        articleContributor.getString(ARTICLE_WEB_TITLE);
+                    JSONObject articleContributor = articleTagsArray.getJSONObject(0);
+                    articleAuthor = articleContributor.getString(ARTICLE_WEB_TITLE);
                 } catch (JSONException ignored)
                 {
                 }
@@ -171,22 +160,14 @@ public class GuardianJsonParser
                 String articleFile = VALUE_NO_IMAGE;
                 try 
                 {
-                    JSONObject articleBlocks = 
-                        articleRecord.getJSONObject(JSON_BLOCKS);
-                    JSONObject articleRequestedBlocks =
-                        articleBlocks.getJSONObject(JSON_REQUESTED_BODY_BLOCKS);
-                    JSONArray articleBodyLatestArray = 
-                        articleRequestedBlocks.getJSONArray(JSON_BODY_LATEST);
-                    JSONObject articleBodyLatest = 
-                        articleBodyLatestArray.getJSONObject(0);
-                    JSONArray articleElements = 
-                        articleBodyLatest.getJSONArray(JSON_ELEMENTS);
-                    JSONObject articleAssets = 
-                        articleElements.getJSONObject(1);
-                    JSONArray articleImageArray = 
-                        articleAssets.getJSONArray(JSON_ASSETS);
-                    JSONObject articleImage = 
-                        articleImageArray.getJSONObject(3);
+                    JSONObject articleBlocks = articleRecord.getJSONObject(JSON_BLOCKS);
+                    JSONObject articleRequestedBlocks = articleBlocks.getJSONObject(JSON_REQUESTED_BODY_BLOCKS);
+                    JSONArray articleBodyLatestArray = articleRequestedBlocks.getJSONArray(JSON_BODY_LATEST);
+                    JSONObject articleBodyLatest = articleBodyLatestArray.getJSONObject(0);
+                    JSONArray articleElements = articleBodyLatest.getJSONArray(JSON_ELEMENTS);
+                    JSONObject articleAssets = articleElements.getJSONObject(1);
+                    JSONArray articleImageArray = articleAssets.getJSONArray(JSON_ASSETS);
+                    JSONObject articleImage = articleImageArray.getJSONObject(3);
                     articleFile = articleImage.getString(JSON_FILE);
                 }
                 catch (JSONException ignored)
