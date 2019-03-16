@@ -401,7 +401,7 @@ Click the menu button on the top left corner to expanding the provinces and citi
 
 
 
-### 图灵机器人
+### Turing Robot
 
 Click the "microphone" button to change your voice to words.
 
