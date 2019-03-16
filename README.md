@@ -1,14 +1,14 @@
-## Just a Cat — An Information Application
+# Just a Cat — An Information Application
 
 <img src="img/logo.png" width=600/>
 
-### 1. Introduction
+## 1. Introduction
 
 *Just a Cat*  is an informative Android application. It integrates latest news from *The New York Times*, *The Guardian* and some mainstream medias in China, weather information, projects on github trending, a turing robot which can chat with users (support voice input) and translation (support voice input).
 
 
 
-### 2. APIs
+## 2. APIs
 
 [The Guardian](http://content.guardianapis.com/)
 
@@ -48,7 +48,7 @@ Speech recognition method developed by iFly (SDK is under`Just/app/libs`)
 
 
 
-### 3. Implement
+## 3. Implement
 
 - Adopt material design style, use the slide menu to switch different information pages.
 - Use retrofit to make Http&Https requests, use GSON and SimpleXml to parse data.
@@ -57,8 +57,9 @@ Speech recognition method developed by iFly (SDK is under`Just/app/libs`)
 
 ### Data parsing
 
-- Deal with XML
-  - `GithubParser Class ` Use SimpleXml to parse XML data from API of github trending
+#### Deal with XML
+
+`GithubParser Class` Use SimpleXml to parse XML data from API of github trending
 
 ```java
 public class GitHubParser
@@ -99,12 +100,9 @@ public class GitHubParser
 
 
 
+#### Deal with JSON example
 
-
-
-
-- Deal with JSON example
-  - `GuardianJsonParser Class ` Use GSON to parse JSON data form API of The Guardian
+`GuardianJsonParser Class` Use GSON to parse JSON data form API of The Guardian
 
 ```java
 public class GuardianJsonParser
@@ -193,9 +191,7 @@ public class GuardianJsonParser
 
 
 
-
-
-- `Utility Class ` Use GSON to parse JSON data from weather API
+`Utility Class` Use GSON to parse JSON data from weather API
 
 ```java
 public class Utility
@@ -297,23 +293,23 @@ public class Utility
 
 
 
-### 4.Other functions
+## 4. Other functions
 
-#### Change Themes
+### Change Themes
 
 In fact, this function just change the color of toolbar from blue to grey.
 
 
 
-#### Favorites
+### Favorites
 
 You can touch the "favorites" button on news page to add it to your favorites list, you can also clean your favorites list.
 
 
 
-### 5. Development and configuration
+## 5. Development and configuration
 
-#### Environment
+### Environment
 
 Language: Java
 
@@ -321,17 +317,19 @@ IDE: IntelliJ IDEA
 
 
 
-#### How to run
+### How to run
 
 Download the project and run in IDEA
 
 
 
-#### APIs
+### APIs
 
 You must provide your own keys of following five APIs in order to connect with and fetch data from them. 
 
-##### Turing Robot
+
+
+#### Turing Robot
 
 Create a API on http://www.tuling123.com and put your key and user id here in `Activity/TulingActivity.java`
 
@@ -339,7 +337,7 @@ Create a API on http://www.tuling123.com and put your key and user id here in `A
 
 
 
-##### Youdao Translator
+#### Youdao Translator
 
 Create a API on https://ai.youdao.com and  and put your key and app id here in `Activity/TranslateActivity.java `
 
@@ -347,7 +345,7 @@ Create a API on https://ai.youdao.com and  and put your key and app id here in `
 
 
 
-##### iFly
+#### iFly
 
 Create a API on https://www.xfyun.cn and download SDK. Put your app id here in `Activity/TranslateActivity.java `
 
@@ -355,7 +353,7 @@ Create a API on https://www.xfyun.cn and download SDK. Put your app id here in `
 
 
 
-##### The New York TImes
+#### The New York TImes
 
 Create a API on https://developer.nytimes.com and put your key here in `util/NewsQueryUtils.java`
 
@@ -363,7 +361,7 @@ Create a API on https://developer.nytimes.com and put your key here in `util/New
 
 
 
-##### The Guardian
+#### The Guardian
 
 Create a API on https://open-platform.theguardian.com/ and put your key here in `Data/API.java`
 
@@ -371,74 +369,60 @@ Create a API on https://open-platform.theguardian.com/ and put your key here in 
 
 
 
+## 6. Screen Shots
 
+### Home page and slide menu
 
-### 6. ScreenShots
+Click the menu button on the top left corner to expand the slide menu.
 
-#### Home page and slide menu
-
-Click the menu button on the top left corner to expanding the slide menu.
-
-<img src="img/headline.png" width=500/>
+<img src="img/headline.png" width=700/>
 
 
 
-#### Favourites
+### Favourites
 
 Click the favorites button on the bottom right corner to add this news into your favorites list. Click the delete button on the op right corner to clean your favorites list.
 
-<img src="img/love.png" width=500/>
+<img src="img/love.png" width=700/>
 
 
 
-#### Weather
+### Weather
 
 Click the menu button on the top left corner to expanding the provinces and cities menu.
 
-<img src="img/weather.png" width=500/>
+<img src="img/weather.png" width=700/>
 
 
 
-#### The New York Times
+### The Guardian / The New York Times / Github
 
-<img src="img/nytimes.jpg" width=250/>
-
-
-
-#### The Guardian
-
-<img src="img/guardian.jpg" width=250/>
+<img src="img/guardian-nytimes-github.png"/>
 
 
 
-#### 图灵机器人
+### 图灵机器人
 
 Click the "microphone" button to change your voice to words.
 
-<img src="img/chat.jpg" width=250/>
+<img src="img/chat.png" width=700/>
 
 
 
-#### Github
-
-<img src="img/github.jpg" width=250/>
-
-
-
-#### Translator
+### Translator
 
 Click the "microphone" button to change your voice to words.
 
-<img src="img/translate.jpg" width=300/>
+<img src="img/translate.png" width=700/>
 
 
 
-#### Change theme
+### Change theme
 
-<img src="img/theme.jpg" width=300/>
+<img src="img/theme.png" width=700/>
 
 
 
-#### About
+### About
 
-<img src="img/about.jpg" width=300/>
+<img src="img/about.png" width=700/>
