@@ -375,7 +375,7 @@ Create a API on https://open-platform.theguardian.com/ and put your key here in 
 
 Click the menu button on the top left corner to expand the slide menu.
 
-<img src="img/headline.png" width=700/>
+<img src="img/headline.png"/>
 
 
 
@@ -383,7 +383,7 @@ Click the menu button on the top left corner to expand the slide menu.
 
 Click the favorites button on the bottom right corner to add this news into your favorites list. Click the delete button on the op right corner to clean your favorites list.
 
-<img src="img/love.png" width=700/>
+<img src="img/love.png"/>
 
 
 
@@ -391,7 +391,7 @@ Click the favorites button on the bottom right corner to add this news into your
 
 Click the menu button on the top left corner to expanding the provinces and cities menu.
 
-<img src="img/weather.png" width=700/>
+<img src="img/weather.png"/>
 
 
 
@@ -405,7 +405,7 @@ Click the menu button on the top left corner to expanding the provinces and citi
 
 Click the "microphone" button to change your voice to words.
 
-<img src="img/chat.png" width=700/>
+<img src="img/chat.png"/>
 
 
 
@@ -413,16 +413,16 @@ Click the "microphone" button to change your voice to words.
 
 Click the "microphone" button to change your voice to words.
 
-<img src="img/translate.png" width=700/>
+<img src="img/translate.png"/>
 
 
 
 ### Change theme
 
-<img src="img/theme.png" width=700/>
+<img src="img/theme.png"/>
 
 
 
 ### About
 
-<img src="img/about.png" width=700/>
+<img src="img/about.png"/>
